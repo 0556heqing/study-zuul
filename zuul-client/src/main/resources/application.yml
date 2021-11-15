@@ -1,0 +1,13 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: study-zuul-client
+
+zuul:
+  routes:
+    route-name:
+      url: http://localhost:8080/
+      path: /rest/**
+# 示例：http://localhost:8001/rest/study/zuul?accessToken=1
